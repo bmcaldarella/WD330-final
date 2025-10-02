@@ -1,0 +1,26 @@
+.view-all{
+    margin: 5rem auto;
+    padding: 10rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.137);
+  
+}   
+
+
+#view-all-menu {
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    font-size:2rem;
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+      filter: brightness(50%); 
+    
+
+
+}
+#view-all-menu:hover {
+   filter: none;
+   cursor:pointer;
+   transform: scale(1.2);
+}
