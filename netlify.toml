@@ -2,15 +2,13 @@
   command = "npm run build"
   publish = "dist"
 
-# Si usas SPA enrutadas por JS:
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
-
-# 🔁 Proxy de API: reenvía /api/* hacia tu API en Vercel
 [[redirects]]
   from = "/api/*"
-  to = "https://peruvian-flavors.vercel.app/api/:splat"
+  to = "https://peruvian-flavors-ome7hlxtb-peruvian-recipies-projects.vercel.app/api/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
