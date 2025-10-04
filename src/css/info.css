@@ -9,6 +9,7 @@
   backdrop-filter: blur(50px);
   max-width: 1280px;
   margin-inline: auto;
+  margin: 10rem 0;
 }
 
 .info-image {

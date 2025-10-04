@@ -118,6 +118,27 @@
 #regions-filters{
     margin-bottom: 2rem;
 }
+
+.btn-ghost{
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid rgba(253, 253, 253, 0.264);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+    opacity: 50%;
+
+}
+
+
+.btn-ghost:hover{
+    opacity: 100%;
+}
+
+
 @media (max-width: 480px) {
     .categories img {
         height: 220px;
