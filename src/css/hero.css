@@ -1,5 +1,5 @@
 :root {
-  --accent: #e63946;
+  --accent: #fd0015;
   --hero-fg: #fff;
   --hero-min: clamp(480px, 90svh, 1000px);
 }
