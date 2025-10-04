@@ -11,7 +11,7 @@ export default defineConfig({
         detail: path.resolve(__dirname, 'detail.html'),
         favorites: path.resolve(__dirname, 'favorites.html'),
         shopping: path.resolve(__dirname, 'shopping-list.html'),
-        suggest: path.resolve(__dirname, 'suggest.html'),
+       
       }
     }
   }
