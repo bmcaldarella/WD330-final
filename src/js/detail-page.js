@@ -59,7 +59,7 @@ function renderDetail(r){
 
   root.innerHTML = `
     <div class="detail-grid">
-      <div>
+      <div class="container-detail">
         <img class="hero-img" src="${imgSrc}" alt="${r.name}">
       </div>
       <div>

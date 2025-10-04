@@ -528,7 +528,7 @@
       "wikipedia_title": "Papa a la huancaína",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Papa a la huancaína peruvian recipe",
-      "image": "/img/recipes/papa-a-la-huancaina.jpg",
+      "image": "/img/huancaina.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -606,7 +606,7 @@
       "wikipedia_title": "Anticuchos",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Anticuchos peruvian recipe",
-      "image": "/img/recipes/anticuchos.jpg",
+      "image": "/img/anticuho-2.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -691,7 +691,7 @@
       "wikipedia_title": "Seco de cordero",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Seco de cordero peruvian recipe",
-      "image": "/img/recipes/seco-de-cordero.jpg",
+      "image": "/img/seco.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -780,7 +780,7 @@
       "wikipedia_title": "Rocoto relleno",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Rocoto relleno peruvian recipe",
-      "image": "/img/recipes/rocoto-relleno.jpg",
+      "image": "/img/rocoto.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -947,7 +947,7 @@
       "wikipedia_title": "Arroz con mariscos",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Arroz con mariscos peruvian recipe",
-      "image": "/img/recipes/arroz-con-mariscos.jpg",
+      "image": "/img/arroz-maricos.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -1042,7 +1042,7 @@
       "wikipedia_title": "Jalea",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Jalea peruvian recipe",
-      "image": "/img/recipes/jalea.jpg",
+      "image": "/img/jalea.webp",
       "source": "seed",
       "lang": "en"
     },
@@ -1545,7 +1545,7 @@
       "wikipedia_title": "Chicharrón de pescado",
       "wikipedia_lang_pref": "en",
       "youtube_query": "Chicharrón de pescado peruvian recipe",
-      "image": "/img/recipes/chicharron-de-pescado.jpg",
+      "image": "/img/chicharron.webp",
       "source": "seed",
       "lang": "en"
     },
