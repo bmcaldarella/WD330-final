@@ -1,9 +1,31 @@
-import data from '../../../data/peruvian_recipes.json' assert { type: 'json' };
+// api/v1/recipes/[id].mjs
+import { readFile } from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+export const config = { runtime: 'nodejs' };
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  const id = req.query.id || req.params?.id;
-  const found = (data.items || []).find(r => r.id === id);
-  if (!found) return res.status(404).json({ error: 'Not found' });
-  res.status(200).json(found);
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
+  if (req.method === 'OPTIONS') { res.status(204).end(); return; }
+
+  try {
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    const filePath = path.join(__dirname, '../../../data/peruvian_recipes.json');
+    const raw = await readFile(filePath, 'utf8');
+    const parsed = JSON.parse(raw);
+    const items = Array.isArray(parsed) ? parsed : (parsed.items || []);
+
+    const url = new URL(req.url, `http://${req.headers.host}`);
+    const id = url.pathname.split('/').pop(); // o req.query.id si prefieres
+
+    const item = items.find(r => String(r.id) === String(id) || r.slug === id);
+    if (!item) { res.status(404).json({ error: 'Not found' }); return; }
+
+    res.status(200).json({ item });
+  } catch (err) {
+    console.error('recipes/[id] error:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 }
