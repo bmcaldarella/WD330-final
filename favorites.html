@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Favorites • Peruvian Flavors</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/nav.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="src/css/hero.css">
+    <link rel="stylesheet" href="src/css/info.css">
+    <link rel="stylesheet" href="src/css/view.css">
+    <link rel="stylesheet" href="src/css/categories-view.css">
+    <link rel="stylesheet" href="src/css/favorite.css">
+
+</head>
+<body>
+  <div id="header"></div>
+
+  <main id="main" class="container">
+    <h1>My Favorites</h1>
+    <p id="favorites-empty" class="muted">No favorites yet. Go add some ⭐ recetas ricas.</p>
+    <ul id="favorites-list" class="grid" style="list-style:none;padding:0;margin:1rem 0 3rem;"></ul>
+  </main>
+
+  <div id="footer"></div>
+
+  <!-- IMPORTANTE: primero main.js, luego favorites-page.js -->
+  <script type="module" src="src/js/favorites-page.js"></script>
+  <script type="module" src="/src/js/main.js" defer></script>
+<script type="module" src="src/js/api/mealdb.js" defer></script>
+<script type="module" src="/src/js/nav.js" defer></script>
+<script type="module" src="/src/js/footer.js" derfer></script>
+
+<script type="module" src="/src/js/api/categories-view.js" defer></script>
+
+
+</body>
+</html>

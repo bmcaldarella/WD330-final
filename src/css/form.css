@@ -1,0 +1,24 @@
+.searchbar {
+  display: flex;
+  gap: .5rem;
+  margin: 0 0 1rem;
+}
+.searchbar input[type="search"] {
+  flex: 1;
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  border: 1px solid var(--border, rgba(255,255,255,.15));
+  background: var(--surface, #121214);
+  color: var(--text, #eaeaea);
+}
+.searchbar button {
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  border: 1px solid var(--border, rgba(255,255,255,.15));
+  background: transparent;
+  color: var(--text, #eaeaea);
+  cursor: pointer;
+}
+.searchbar button:hover {
+  background: rgba(255,255,255,.06);
+}
